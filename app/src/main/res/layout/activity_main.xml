@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="at.ac.univie.hci.btctracker.Activities.TrackerActivity">
+
+    <TextView
+        android:id="@+id/profitView"
+        android:layout_width="358dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lastUpdate"
+        android:layout_width="78dp"
+        android:layout_height="21dp"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="8dp"
+        android:text="Last update:"
+        android:textAlignment="viewEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/timeStamp"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toEndOf="@+id/updateBtn" />
+
+    <TextView
+        android:id="@+id/timeStamp"
+        android:layout_width="39dp"
+        android:layout_height="19dp"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="44dp"
+        android:textAlignment="viewEnd"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/portfolioBtn" />
+
+    <Button
+        android:id="@+id/updateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="24dp"
+        android:text="Update"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/portfolioBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Portfolio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/activity_main"
+        android:layout_width="359dp"
+        android:layout_height="426dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/updateBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profitView"
+        tools:context="com.software.fire.expandingrecyclerviewtutorial.MainActivity">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="363dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/timeStamp"
+            tools:layout_editor_absoluteX="16dp" />
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Tracker</string>
+    <string name="title_activity_portfolio">Portfolio</string>
+    <string name="transaction_history">Transaction History</string>
+    <string name="telegram_channel">Telegram</string>
+    <string name="about">About</string>
+    <string name="help">Help</string>
+    <string name="wiki">Wiki</string>
+    <string-array name="wikiSpin">
+        <item>Bitcoin</item>
+        <item>Ethereum</item>
+    </string-array>
+    <string-array name="crypto_array">
+        <item>BTC</item>
+        <item>EOS</item>
+        <item>ETH</item>
+        <item>LTC</item>
+        <item>TRX</item>
+        <item>XRP</item>
+        <item>NEO</item>
+        <item>BNB</item>
+        <item>ETC</item>
+        <item>BCH</item>
+    </string-array>
+    <string-array name="bought_currency">
+        <item>USD</item>
+        <item>EUR</item>
+        <item>BTC</item>
+    </string-array>
+</resources>
